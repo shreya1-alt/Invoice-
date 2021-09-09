@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1
+      style="
+        font-size: 100px;
+        font-style: normal;
+        font-family: timeburner;
+        text-align: center;
+        background-color: darkgray;
+        color: aliceblue;
+      "
+    >
+      Invoice
+    </h1>
+
+    <table>
+      <td
+        style="
+          font-size: 40px;
+          font-weight: 100;
+          font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+            sans-serif;
+        "
+      >
+        <b>AA Associates</b> <br />
+        <small>No 3 Click Street ,Mnahattan ,NY</small> <br /><small>
+          NY 35284</small
+        >
+        <br />
+        <b>Phone</b> <small>(243) 677-5463</small> <br />
+        <b>Fax</b> <small>(243) 665-8432</small>
+      </td>
+    </table>
+
+    <br />
+    <form name="frmDataEntry" action="processor.html" method="GET"></form>
+    <p
+      style="
+        font-size: 50px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        padding-left: 40px;
+      "
+    >
+      <b>INVOICE NO:</b
+      ><textarea
+        inputmode="numeric"
+        id="Enter Invoice No:"
+        cols="25"
+        rows="2"
+      ></textarea>
+      &nbsp; <b>DATE:</b
+      ><textarea
+        inputmode="numeric"
+        id="Enter Invoice No:"
+        cols="25"
+        rows="2"
+      ></textarea>
+    </p>
+
+    <table border="1px">
+      <thead>
+        <tr style="font-size: 32px; font-family: sans-serif">
+          <th style="text-align: right; width: 500px">QUANTITY</th>
+          <th style="text-align: right; width: 400px">DESCRIPTION</th>
+          <th style="text-align: right; width: 280px">CODE</th>
+          <th style="text-align: right; width: 350px">UNIT PRICE</th>
+          <th style="text-align: right; width: 300px">TOTAL</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <td style="font-size: 40px; text-align: right; width: 500px">
+          <input type="text" />
+        </td>
+        <td style="font-size: 35px; text-align: right; width: 500px">
+          <input type="text" />
+        </td>
+        <td style="font-size: 35px; text-align: right; width: 500px">
+          <input type="text" name="" id="" />
+        </td>
+        <td style="font-size: 35px; text-align: right; width: 500px">
+          $<input type="text" />
+        </td>
+        <td style="font-size: 35px; text-align: right; width: 500px">
+          $<input type="text" />
+        </td>
+      </tbody>
+
+      <tbody>
+        <td style="font-size: 40px; text-align: right; width: 500px">
+          <input type="text" />
+        </td>
+        <td style="font-size: 35px; text-align: right; width: 500px">
+          <input type="text" />
+        </td>
+        <td style="font-size: 35px; text-align: right; width: 500px">
+          <input type="text" name="" id="" />
+        </td>
+        <td style="font-size: 35px; text-align: right; width: 500px">
+          $<input type="text" />
+        </td>
+        <td style="font-size: 35px; text-align: right; width: 500px">
+          $<input type="text" />
+        </td>
+      </tbody>
+
+      <tbody>
+        <td style="font-size: 40px; text-align: right; width: 500px">
+          <input type="text" />
+        </td>
+        <td style="font-size: 35px; text-align: right; width: 500px">
+          <input type="text" />
+        </td>
+        <td style="font-size: 35px; text-align: right; width: 500px">
+          <input type="text" name="" id="" />
+        </td>
+        <td style="font-size: 35px; text-align: right; width: 500px">
+          $<input type="text" />
+        </td>
+        <td style="font-size: 35px; text-align: right; width: 500px">
+          $<input type="text" />
+        </td>
+      </tbody>
+    </table>
+    <br />
+    <table>
+      <thead>
+        <tr style="font-size: 32px; font-family: sans-serif">
+          <th style="text-align: right; width: 1550px">
+            SUBTOTAL &nbsp; $<input type="text" />
+          </th>
+        </tr>
+      </thead>
+    </table>
+
+    <table>
+      <thead>
+        <tr style="font-size: 32px; font-family: sans-serif">
+          <th style="text-align: right; width: 1550px">
+            SALES TAX -5% &nbsp; $<input type="text" />
+          </th>
+        </tr>
+      </thead>
+    </table>
+
+    <table>
+      <thead>
+        <tr style="font-size: 32px; font-family: sans-serif">
+          <th style="text-align: right; width: 1550px">
+            SHIPPING TAX &nbsp; $<input type="text" />
+          </th>
+        </tr>
+      </thead>
+    </table>
+
+    <table>
+      <thead>
+        <tr style="font-size: 32px; font-family: sans-serif">
+          <th style="text-align: right; width: 1550px">
+            <b>TOTAL DUE AMOUNT &nbsp; $<input type="text" /></b>
+          </th>
+        </tr>
+      </thead>
+    </table>
+
+    <br />
+    <br />
+
+    <h4
+      style="
+        font-size: 40px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: right;
+        width: 1200px;
+      "
+    >
+      <b>TAX IDENTIFICATION NUMBER:</b> <input width="50px" type="text" />
+    </h4>
+
+    <h5
+      style="
+        font-size: 50px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-align: right;
+        width: 1500px;
+      "
+    >
+      THANK YOU
+    </h5>
+  </body>
+</html>
